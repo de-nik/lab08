@@ -1,13 +1,13 @@
-laanguage: cpp
+language: cpp
 
 script:
 - cmake -H. -B_bulid -DCMAKE_INSTALL_PREFIX=_install
 - cmake --build _build
 - cmake --build _build --target install
 addons:
-	apt:
-		sources:
-		- george-edison55-precise-backports
-		packages:
-		- cmake 
-		- cmake-data
+apt:
+sources:
+- george-edison55-precise-backports
+packages:
+- cmake 
+- cmake-data
