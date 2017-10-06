@@ -6,7 +6,7 @@ script:
 - cmake --build _build --target install
 addons:
 apt:
-sources:
+	sources:
 - george-edison55-precise-backports
 packages:
 - cmake 
